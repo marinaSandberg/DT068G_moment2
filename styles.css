@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    margin-block: 0;
+    padding-inline: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7EE;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color:  #1E421D;
+}
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 500;
+    margin: 50px;
+    text-align: center;
+    color:rgb(150, 126, 23);
+}
+h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 2;
+    padding: 50px 50px;
+}
+header {
+    text-align: center;
+    margin: 20px;
+}
+
+.main img {
+    width: 100vw;
+    height: 40vh;
+    display: block;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#marie {
+    display: flex;
+    flex-direction: row;
+    margin: 20px 50px 50px 0;
+    align-items: center;
+    justify-content: center;
+}
+
+#marie img {
+    width: 40vw;
+    border-radius: 30px;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    background-color: rgb(199, 199, 199);
+    padding-top: 50px;
+}
+
+.list div {
+    width: 400px;
+    text-align: center;
+}
+
+footer {
+    width: 100vw;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    font-size: 0.8rem;
+    line-height: 2;
+}
+
+/*-RESPONSIVENESS-*/
+
+@media only screen and (min-width: 1521px) {
+    .main p {
+        padding: 50px 35vw;
+    }
+}
+
+@media only screen and (max-width: 1521px) {
+    .main p {
+        padding: 50px 30vw;
+    }
+
+    .list div p{
+        padding-top: 20px;
+    }
+
+    .list div {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .main p {
+        padding: 50px 15vw;
+    }
+    h2 {
+        margin: 10px;
+    }
+    #marie {
+        flex-direction: column;
+        margin: 5vw;
+    }
+    
+    #marie img {
+        width: 60vw;
+        border-radius: 20px;
+    }
+    .list div p{
+        padding: 20px 20px;
+    }
+    .list div {
+        width: 90vw;
+    }
+}
